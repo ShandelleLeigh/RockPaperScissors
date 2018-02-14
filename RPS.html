@@ -1,0 +1,89 @@
+<!--
+-Priority:
+User selects rock, paper, or scissors
+  maybe grey out everything else that user doesnt select
+Computer randomly chooses
+  [rock, paper, scissors]
+hint: have your choices in an array and randomly choose
+Display the user and computers choice on the screen
+Display the winner
+
+-Bonus:
+Keep track of wins, losses, & ties
+remember this is only going to be until the user refreshes the browser. We don't have anything fetching from or posting to a database yet!
+Use images to make a choice
+hint: you can listen for the click event on any HTML element!
+Be able to start a new game without refreshing
+Track the percentage of times the user has won/lost / tied
+Color a win differently than a loss so it is easy to tell if the user won.
+hint: add and remove classes: http://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript (Links to an external site.)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+  <link href="rps.css" rel="stylesheet" type="text/css">
+  <link href="rps.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+  <headder>
+    <h1 id = "main_headding">Rock Paper Scissors</h1>
+    <h2>Welcome to Rock Paper Scissors</h2>
+    <p>To start, choose rock, paper, or scissors.</p>
+  </headder>
+  <!--body-->
+  <div class = "bodyContainer container">
+    <!--game section-->
+    <div class = "container containerLeft">
+      <!--user select icon-->
+      <ul class="squares">
+        <li class="rectangleSmall">
+          <h2>You:</h2>
+        </li>
+        <li class="squareSmall">
+          <a class = "choice" ><img class= "eachIcon" id="userRock"  src="./images/rock.jpeg"></a>
+        </li>
+        <li class="squareSmall">
+             <a class = "choice" ><img class= "eachIcon" id="userPaper" src="./images/paper.png"></a>
+        </li>
+        <li class="squareSmall">
+          <a class = "choice" ><img class= "eachIcon" id="userScissors" src="./images/scissors.png"></a>
+        </li>
+      </ul>
+    </div>
+    <!---what comuter chooses-->
+    <div class = "container containerRight">
+      <!--user select icon-->
+      <ul class="squares">
+        <li class="rectangleSmall">
+          <h2>Computer:</h2>
+        </li>
+        <li class="squareSmall">
+          <a><img class= "eachIcon" id="compyRock" src="./images/rock.jpeg"></a>
+        </li>
+        <li class="squareSmall">
+            <a><img class= "eachIcon" id="compyPaper" src="./images/paper.png"></a>
+        </li>
+        <li class="squareSmall">
+          <a><img class= "eachIcon" id="compyScissors" src="./images/scissors.png"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--keeping score-->
+  <div class = "keepingScore">
+
+    <div class = "winner">
+
+    </div>
+
+  </div>
+<script src="rps.js"></script>
+</body>
+
+</html>

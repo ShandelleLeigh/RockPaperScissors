@@ -1,0 +1,113 @@
+rps.css
+
+/*Reset Everyting*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)  */
+/*Web safe fonts::
+Arial, Courier New, Courier,
+Garamond,Georgia,Lucida Sans,
+Lucida Grande, Lucida, Palatino Linotype,
+Tahoma,Times New Roman, Times,Trebuchet,Verdana*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, tHead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*---------------------------------My Stuff:---------------------------------*/
+/*--------Headders--------*/
+.main_headding{
+
+}
+h1{
+	font-family: sans-serif;
+	font-size: 3em;
+	text-align: center;
+
+}
+h2{
+	font-family: sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+p{
+	font-size: 1.5em;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+/*--------containers--------*/
+.container:after .container:before {
+    clear: both;
+    content: ".";
+    display: table;
+	}
+/*.container*/
+
+.bodyContainer{}
+.containerLeft{
+	display: block;
+	float: left;
+	width: 50%;
+	/* background-color: blue; */
+}
+.containerRight{
+	display: block;
+	float: right;
+	width: 50%;
+	/* background-color: yellow; */
+}
+
+
+.squares{
+
+}
+.rectangleSmall{
+	display: block;
+	width: 400px;
+	height: 5%;
+	margin: 1% auto;
+	border: 1px solid #ddd;
+}
+.squareSmall{
+	display: block;
+	width: 400px;
+	height: 400px;
+	margin: 1% auto;
+	border: 1px solid #ddd;
+	text-align: center;
+	vertical-align: middle;
+}
+.eachIcon{
+
+	margin: 15% auto;
+}
+#userRock{}
+#userPaper{}
+#userScissors{}
+#compyRock{}
+#compyPaper{}
+#compyScissors{}
+
+keepingScore
+winner
